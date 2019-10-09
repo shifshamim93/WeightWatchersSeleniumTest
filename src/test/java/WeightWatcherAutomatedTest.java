@@ -125,6 +125,7 @@ public class WeightWatcherAutomatedTest {
 
     List<WebElement> elements = driver.findElements(By.xpath(
         "//div[@class='schedule-detailed-day']//div[@class='schedule-detailed-day-meetings-item']"));
+
     ListIterator<WebElement> theListOfElements = elements.listIterator();
 
     Map<String, Integer> map = new HashMap<>();
