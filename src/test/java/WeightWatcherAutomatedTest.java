@@ -123,14 +123,14 @@ public class WeightWatcherAutomatedTest {
 
   public void Test3() throws Exception {
 
-    List<WebElement> professors = driver.findElements(By.xpath(
+    List<WebElement> elements = driver.findElements(By.xpath(
         "//div[@class='schedule-detailed-day']//div[@class='schedule-detailed-day-meetings-item']"));
-    ListIterator<WebElement> theListOfProfessors = professors.listIterator();
+    ListIterator<WebElement> theListOfElements = elements.listIterator();
 
     Map<String, Integer> map = new HashMap<>();
 
-    while (theListOfProfessors.hasNext()) {
-      WebElement elem = theListOfProfessors.next();
+    while (theListOfElements.hasNext()) {
+      WebElement elem = theListOfElementsß.next();
       String name = elem.findElement(By.className("schedule-detailed-day-meetings-item-leader"))
           .getText();
 
