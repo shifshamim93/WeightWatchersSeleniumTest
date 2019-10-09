@@ -130,7 +130,7 @@ public class WeightWatcherAutomatedTest {
     Map<String, Integer> map = new HashMap<>();
 
     while (theListOfElements.hasNext()) {
-      WebElement elem = theListOfElementsß.next();
+      WebElement elem = theListOfElements.next();
       String name = elem.findElement(By.className("schedule-detailed-day-meetings-item-leader"))
           .getText();
 
